@@ -20,6 +20,8 @@ RUN \
 # Define working directory.
 WORKDIR /usr/Downloads
 
+TAG latest
+
 # Clone the git repo to the docker container
 RUN git clone git@github.com:genome21/floreantpos-1.git
 
