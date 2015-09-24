@@ -11,6 +11,8 @@ RUN yum -y update; yum clean all
 RUN yum -y install git; yum clean all
 RUN yum -y epel-release; yum clean all
 RUN yum -y install x11vnc xterm tigervnc-server xorg-x11-server-Xvfb xorg-x11-twm xorg-x11-font dejavu-sans-fonts dejavu-serif-fonts xdotool; yum clean all
+RUN yum -y install java-1.7.0-openjdk; yum clean all
+RUN yum -y install java-1.7.0-openjdk-devel; yum clean all
 
 # Add the xstartup file into the image
 ADD ./xstartup /
