@@ -29,7 +29,7 @@ WORKDIR /usr/Downloads
 
 
 # Clone the git repo to the docker container
-RUN git clone git@github.com:genome21/floreantpos-1.git
+RUN git clone https://github.com/genome21/floreantpos-1.git
 
 # Run Floreant POS
 ADD ./start-server.sh /start-server.sh
