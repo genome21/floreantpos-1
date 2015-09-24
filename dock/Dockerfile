@@ -6,6 +6,8 @@
 FROM centos:centos7
 MAINTAINER Robert Wilkins III <thecainvestors@gmail.com>
 
+TAG latest
+
 # Install
 RUN yum -y update; yum clean all
 RUN yum -y install git; yum clean all
