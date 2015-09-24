@@ -6,8 +6,6 @@
 FROM centos:centos7
 MAINTAINER Robert Wilkins III <thecainvestors@gmail.com>
 
-TAG latest
-
 # Install
 RUN yum -y update; yum clean all
 RUN yum -y install git; yum clean all
@@ -18,7 +16,6 @@ RUN yum -y install x11vnc xterm tigervnc-server xorg-x11-server-Xvfb xorg-x11-tw
 ADD ./xstartup /
 
 RUN mkdir /.vnc
-RUN x11vnc -storepasswd 123456 /.vnc/passwd
 RUN \cp -f ./xstartup /.vnc/.
 RUN chmod -v +x /.vnc/xstartup
 
