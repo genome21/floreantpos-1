@@ -34,5 +34,6 @@ WORKDIR /usr/Downloads
 RUN git clone https://github.com/genome21/floreantpos-1.git
 
 # Run Floreant POS
-RUN ./floreantpos-1/start-server.sh
-RUN ./floreantpos-1/floreantpos.bat
+RUN chdir floreantpos-1
+RUN ./start-server.sh
+RUN ./floreantpos.bat
