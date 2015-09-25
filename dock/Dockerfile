@@ -38,4 +38,4 @@ RUN ls
 RUN ls floreantpos-1
 RUN ls floreantpos-1/lib
 RUN ./floreantpos-1/start-server.sh &
-RUN ./floreantpos-1/floreantpos.bat
+RUN ./floreantpos-1/floreantpos.sh
