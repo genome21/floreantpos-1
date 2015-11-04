@@ -1,1 +1,0 @@
-Dockerized version of the popular Floreant POS.  From their website: "Enterprise Grade Open source Restaurant Point of Sale application that’s super intuitive, feature rich and free".
